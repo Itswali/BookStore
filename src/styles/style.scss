@@ -1,29 +1,30 @@
 @import url(./_book.scss);
+
 * {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    font-size: 23px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 23px;
 }
 
 .navbar {
-    border: 2px solid brown;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 30px;
+  border: 2px solid brown;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px;
 }
 
 .Title-name {
-    font-size: 26px;
+  font-size: 26px;
 }
 
 .nav-links {
-    font-size: 30px;
-    display: flex;
-    gap: 30px;
+  font-size: 30px;
+  display: flex;
+  gap: 30px;
 }
 
 :any-link {
-    text-decoration: none;
+  text-decoration: none;
 }
