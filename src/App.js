@@ -2,6 +2,7 @@
 import { Link, Route, Routes } from 'react-router-dom';
 import './styles/style.scss';
 import Books from './combiner/Books';
+import Cartegory from './components/Category';
 
 export default function App() {
   return (
@@ -11,14 +12,13 @@ export default function App() {
           BOOK STORE
         </div>
         <div className="nav-links">
-          <Link to="/"> Books </Link>
-          <Link to="/"> Category </Link>
+          <Link to="/Books"> Books </Link>
+          <Link to="/Category"> Category </Link>
         </div>
       </nav>
-      <Books />
       <Routes>
-        <Route path="/" />
-        <Route path="/" />
+        <Route path="/Category" element={<Cartegory />} />
+        <Route path="/Books" element={<Books />} />
         <Route path="/" />
       </Routes>
     </>
