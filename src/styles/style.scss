@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    border: 2px solid blue;
+}
+
+.navbar {
+    border: 2px solid brown;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.Title-name {
+    font-size: 26px;
+}
+
+.nav-links {
+    font-size: 30px;
+    display: flex;
+    gap: 30px;
+}
+
+:any-link {
+    text-decoration: none;
+}
