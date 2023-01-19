@@ -1,5 +1,6 @@
 import Book from './Book';
 import '../styles/style.scss';
+import CreateBook from './CreateBook';
 
 function BookList() {
   const books = [
@@ -33,7 +34,7 @@ function BookList() {
       {books.map((book) => (
         <li className="Main-content" key={book.id}>
           <Book title={book.title} author={book.author} />
-          <button type="button">Remove</button>
+          <CreateBook />
         </li>
       ))}
     </ul>

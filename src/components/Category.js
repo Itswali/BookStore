@@ -2,7 +2,9 @@ import React from 'react';
 
 const Cartegory = () => (
   <div>
-    <h1>Cartegory</h1>
+    <button type="submit">
+      Check Status
+    </button>
   </div>
 );
 

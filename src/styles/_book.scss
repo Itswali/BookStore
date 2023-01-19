@@ -10,14 +10,12 @@
 
 .Main-content {
   border: 3px solid aqua;
-  width: 30%;
-  margin-left: 30%;
   text-align: center;
   display: flex;
-  gap: 50px;
-
   button {
     height: max-content;
+    margin-left: 30px;
+    color: blue;
   }
 }
 

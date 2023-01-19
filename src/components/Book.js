@@ -8,6 +8,7 @@ function Book({ title, author }) {
       {title}
       by
       {author}
+      <button type="button">Remove</button>
     </span>
   );
 }
