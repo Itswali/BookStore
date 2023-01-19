@@ -11,14 +11,13 @@
 .Main-content {
   border: 3px solid aqua;
   width: 30%;
-  // min-height: 8vh;
   margin-left: 30%;
   text-align: center;
   display: flex;
   gap: 50px;
 
   button {
-    height: fit-content;
+    height: max-content;
   }
 }
 
@@ -30,7 +29,7 @@
   text-align: center;
 
   button {
-    min-height: fit-content;
-    min-width: fit-content;
+    min-height: max-content;
+    min-width: max-content;
   }
 }
