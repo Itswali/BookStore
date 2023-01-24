@@ -13,7 +13,7 @@ export function removeBook(book) {
   return { type: REMOVE_BOOK, book };
 }
 
-export default function book(state = initialState, action) {
+export default function bookReducer(state = initialState, action) {
   switch (action.type) {
     case ADD_BOOK:
       return { ...state, books: [...state.books, action.book] };

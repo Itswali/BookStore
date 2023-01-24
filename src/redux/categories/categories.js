@@ -10,7 +10,7 @@ export function checkStatus() {
   return { type: CHECK_STATUS };
 }
 
-export default function categories(state = initialState, action) {
+export default function categoriesReducer(state = initialState, action) {
   switch (action.type) {
     case CHECK_STATUS:
       return construction;
