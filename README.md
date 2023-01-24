@@ -30,18 +30,6 @@
 
 **BOOK STORE** 
 
-## 🛠 Built With <a name="built-with"></a>
-
-### Tech Stack <a name="tech-stack"></a>
-
-> Describe the tech stack and include only the relevant sections that apply to your project.
-
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
 
 <!-- Features -->
 
@@ -182,19 +170,10 @@ Feel free to check the [issues page](../../issues/).
 
 > Write a message to encourage readers to support your project
 
-If you like this project...
+If you like this project then give it a star ⭐️ 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ACKNOWLEDGEMENTS -->
-
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank...
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FAQ (optional) -->
 <!--
@@ -203,13 +182,13 @@ I would like to thank...
 
 > Add at least 2 questions new developers would ask when they decide to use your project.
 
-- **[Question_1]**
+- **How to install all the packages used in the app**
 
-  - [Answer_1]
+  - Just type the command npm install It will automatically install all the dependencies
 
-- **[Question_2]**
+- **How to Open on browser**
 
-  - [Answer_2]
+  - npm start coommand will do the trick for you.
   -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
