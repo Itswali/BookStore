@@ -1,6 +1,6 @@
 const CHECK_STATUS = 'CHECK_STATUS';
 
-const construction = 'Unser construction';
+const construction = 'Under construction';
 
 const initialState = {
   categories: [],
