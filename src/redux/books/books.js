@@ -1,21 +1,46 @@
+/* eslint-disable no-param-reassign */
 import { createSlice } from '@reduxjs/toolkit';
 
-const initialState = [];
+const initialState = [
+  {
+    id: 1,
+    title: 'Harry Potter',
+    genres: ['Action', 'Adventure', 'Sci-Fi'],
+    author: 'Suzanne Collins',
+    progress: 77,
+    chapter: 'Chapter 6: Half Blood Prince',
+  },
+  {
+    id: 2,
+    title: 'Sacred Games',
+    genres: ['Sci-Fi', 'Fantasy'],
+    author: 'Frank Herbert',
+    progress: 8,
+    chapter: 'Chapter 1: "The Immortal"',
+  },
+  {
+    id: 3,
+    title: 'MindStorm',
+    genres: ['Economics', 'Non-Fiction'],
+    author: 'Philis Coloumbia',
+    progress: 0,
+    chapter: 'Introduction',
+  },
+];
 
-const booksSlice = createSlice({
+const bookSlice = createSlice({
   name: 'books',
   initialState,
   reducers: {
     addBook: (state, action) => {
-      state.push(action.payload);
+      state.books.push(action.payload);
     },
     removeBook: (state, action) => {
-      const index = state.findIndex((book) => book.id === action.payload);
-      state.splice(index, 1);
+      state.books = state.books.filter((book) => book.id !== action.payload);
     },
   },
 });
 
-export const { addBook, removeBook } = booksSlice.actions;
+export const { addBook, removeBook } = bookSlice.actions;
 
-export default booksSlice.reducer;
+export default bookSlice.reducer;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import BookList from './components/BookItem';
+import BookList from './components/BookList';
 import CreateBook from './components/CreateBook';
 import Categories from './components/Categories';
 
