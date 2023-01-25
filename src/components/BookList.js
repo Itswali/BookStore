@@ -4,7 +4,7 @@ import Book from './Book';
 import CreateBook from './CreateBook';
 
 function BookList() {
-  const books = useSelector((state) => state.books.books);
+  const books = useSelector((state) => state.books);
 
   return (
     <ul className="book-container">
