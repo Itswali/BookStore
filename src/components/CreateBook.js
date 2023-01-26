@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addBook } from '../redux/books/books';
@@ -21,10 +20,10 @@ function CreateBook() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label htmlFor="title">Title:</label>
+    <form className="add-book" onSubmit={handleSubmit}>
+      <span className="title" htmlFor="title">Title:</span>
       <input type="text" id="title" value={title} onChange={(e) => setTitle(e.target.value)} />
-      <label htmlFor="author">Author:</label>
+      <span htmlFor="author">Author:</span>
       <input type="text" id="author" value={author} onChange={(e) => setAuthor(e.target.value)} />
       <button type="submit">Add Book</button>
     </form>

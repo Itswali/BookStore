@@ -9,11 +9,14 @@ function BookList() {
   return (
     <ul className="book-container">
       {books.map((book) => (
-        <li className="Main-content" key={book.id}>
-          <Book title={book.title} author={book.author} />
-          <CreateBook />
-        </li>
+        <>
+          <li className="Main-content" key={book.id}>
+            <Book title={book.title} author={book.author} id={book.id} />
+          </li>
+        </>
       ))}
+
+      <CreateBook />
     </ul>
   );
 }
