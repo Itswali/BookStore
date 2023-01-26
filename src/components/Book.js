@@ -1,14 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/books';
+import { removeBookAPI } from '../redux/fetchApi';
 
-function Book({ title, author, id }) {
+const Book = (props) => {
+  const {
+    title, author, Id,
+  } = props;
+
   const dispatch = useDispatch();
 
   const handleRemove = () => {
-    dispatch(removeBook(id));
+    dispatch(removeBookAPI(Id));
   };
+
   return (
     <span className="book-display">
       <h1>
@@ -21,11 +26,12 @@ function Book({ title, author, id }) {
       <button type="button" onClick={handleRemove}>Remove</button>
     </span>
   );
-}
+};
 
 export default Book;
+
 Book.propTypes = {
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
-  id: PropTypes.string.isRequired,
+  Id: PropTypes.string.isRequired,
 };
