@@ -17,8 +17,8 @@ function BookList() {
       <ul>
         {books && books.length > 0 ? books.map((book) => (
           <Book
-            Id={book.id}
-            key={book.id}
+            Id={book.Id}
+            key={book.Id}
             Title={book.title}
             Author={book.author}
           />

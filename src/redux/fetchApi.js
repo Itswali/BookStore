@@ -1,4 +1,3 @@
-/* eslint-disable no-template-curly-in-string */
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
 
@@ -35,8 +34,8 @@ export const addBookAPI = createAsyncThunk(ADD_BOOK_API, async (payload, thunkAP
   return thunkAPI.dispatch(getAllBooks());
 });
 
-export const removeBookAPI = createAsyncThunk(REMOVE_BOOK_API, async (id, thunkAPI) => {
-  await axios.delete('${URL}/${id}');
+export const removeBookAPI = createAsyncThunk(REMOVE_BOOK_API, async (payload, thunkAPI) => {
+  await axios.delete(`${URL}/${payload.id}`);
   return thunkAPI.dispatch(getAllBooks());
 });
 

@@ -5,7 +5,7 @@ import { removeBookAPI } from '../redux/fetchApi';
 
 const Book = (props) => {
   const {
-    title, author, Id,
+    Title, Author, Id,
   } = props;
 
   const dispatch = useDispatch();
@@ -17,11 +17,11 @@ const Book = (props) => {
   return (
     <span className="book-display">
       <h1>
-        {title}
+        {Title}
       </h1>
       <h2> by </h2>
       <h1>
-        {author}
+        {Author}
       </h1>
       <button type="button" onClick={handleRemove}>Remove</button>
     </span>
@@ -31,7 +31,7 @@ const Book = (props) => {
 export default Book;
 
 Book.propTypes = {
-  title: PropTypes.string.isRequired,
-  author: PropTypes.string.isRequired,
+  Title: PropTypes.string.isRequired,
+  Author: PropTypes.string.isRequired,
   Id: PropTypes.string.isRequired,
 };
