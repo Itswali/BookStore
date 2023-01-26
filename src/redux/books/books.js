@@ -1,25 +1,37 @@
-const ADD_BOOK = 'bookstore/books/ADD_BOOK';
-const REMOVE_BOOK = 'bookstore/books/REMOVE_BOOK';
+import { createSlice } from '@reduxjs/toolkit';
+import { v4 as uuidv4 } from 'uuid';
 
-const initialState = {
-  books: [],
-};
+const initialState = [
+  {
+    id: uuidv4(),
+    title: 'Harry Potter',
+    genres: ['Action', 'Adventure', 'Sci-Fi'],
+    author: 'Suzanne Collins',
+    progress: 77,
+    chapter: 'Chapter 6: Half Blood Prince',
+  },
+  {
+    id: uuidv4(),
+    title: 'Sacred Games',
+    genres: ['Sci-Fi', 'Fantasy'],
+    author: 'Frank Herbert',
+    progress: 8,
+    chapter: 'Chapter 1: "The Immortal"',
+  },
+];
 
-export function addBook(book) {
-  return { type: ADD_BOOK, book };
-}
+const bookSlice = createSlice({
+  name: 'books',
+  initialState,
+  reducers: {
+    addBook: (state, action) => [...state, action.payload],
+    removeBook: (state, action) => {
+      const index = state.findIndex((book) => book.id === action.payload);
+      state.splice(index, 1);
+    },
+  },
+});
 
-export function removeBook(book) {
-  return { type: REMOVE_BOOK, book };
-}
+export const { addBook, removeBook } = bookSlice.actions;
 
-export default function bookReducer(state = initialState, action) {
-  switch (action.type) {
-    case ADD_BOOK:
-      return { ...state, books: [...state.books, action.book] };
-    case REMOVE_BOOK:
-      return { ...state, books: state.books.filter((b) => b !== action.book) };
-    default:
-      return state;
-  }
-}
+export default bookSlice.reducer;
