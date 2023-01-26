@@ -35,7 +35,7 @@ export const addBookAPI = createAsyncThunk(ADD_BOOK_API, async (payload, thunkAP
 });
 
 export const removeBookAPI = createAsyncThunk(REMOVE_BOOK_API, async (payload, thunkAPI) => {
-  await axios.delete(`${URL}/${payload.id}`);
+  await axios.delete(`${URL}/${payload}`);
   return thunkAPI.dispatch(getAllBooks());
 });
 

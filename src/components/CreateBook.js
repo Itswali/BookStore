@@ -5,7 +5,7 @@ import { addBookAPI } from '../redux/fetchApi';
 
 function CreateBook() {
   const [state, setState] = useState({
-    item_id: '',
+    item_id: uuidv4(),
     title: '',
     author: '',
     category: '',
@@ -14,7 +14,6 @@ function CreateBook() {
   const onChangeHandler = (event) => {
     setState({
       ...state,
-      item_id: uuidv4(),
       [event.target.name]: event.target.value,
       category: 'Category Action',
     });
@@ -26,7 +25,7 @@ function CreateBook() {
     e.preventDefault();
     dispatch(addBookAPI(state));
     setState({
-      item_id: '',
+      item_id: uuidv4(),
       title: '',
       author: '',
       category: 'Category thriller',

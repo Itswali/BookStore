@@ -17,10 +17,11 @@ function BookList() {
       <ul>
         {books && books.length > 0 ? books.map((book) => (
           <Book
-            Id={book.Id}
             key={book.Id}
+            Id={book.Id}
             Title={book.title}
             Author={book.author}
+            Category={book.category}
           />
         )) : <p>No books available</p>}
       </ul>
