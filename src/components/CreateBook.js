@@ -1,5 +1,7 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
+import { v4 as uuidv4 } from 'uuid';
 import { addBook } from '../redux/books/books';
 
 function CreateBook() {
@@ -10,7 +12,7 @@ function CreateBook() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const book = {
-      id: Date.now(),
+      id: uuidv4(),
       title,
       author,
     };

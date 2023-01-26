@@ -1,8 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { v4 as uuidv4 } from 'uuid';
 
 const initialState = [
   {
-    id: 1,
+    id: uuidv4(),
     title: 'Harry Potter',
     genres: ['Action', 'Adventure', 'Sci-Fi'],
     author: 'Suzanne Collins',
@@ -10,20 +11,12 @@ const initialState = [
     chapter: 'Chapter 6: Half Blood Prince',
   },
   {
-    id: 2,
+    id: uuidv4(),
     title: 'Sacred Games',
     genres: ['Sci-Fi', 'Fantasy'],
     author: 'Frank Herbert',
     progress: 8,
     chapter: 'Chapter 1: "The Immortal"',
-  },
-  {
-    id: 3,
-    title: 'MindStorm',
-    genres: ['Economics', 'Non-Fiction'],
-    author: 'Philis Coloumbia',
-    progress: 0,
-    chapter: 'Introduction',
   },
 ];
 
@@ -33,7 +26,8 @@ const bookSlice = createSlice({
   reducers: {
     addBook: (state, action) => [...state, action.payload],
     removeBook: (state, action) => {
-      state.books = state.books.filter((book) => book.id !== action.payload);
+      const index = state.findIndex((book) => book.id === action.payload);
+      state.splice(index, 1);
     },
   },
 });
