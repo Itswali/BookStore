@@ -1,4 +1,3 @@
-/* eslint-disable react/void-dom-elements-no-children */
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/style.scss';
@@ -11,12 +10,12 @@ const Navbar = () => (
       <ul className="nav-links">
         <li className="link-link">
           {' '}
-          <Link to="/" className="link-linked">Books</Link>
+          <Link to="/">Books</Link>
           {' '}
         </li>
-        <li className="link-link">
+        <li className="link-linked">
           {' '}
-          <Link to="/Category" className="link-linked">Cartegory</Link>
+          <Link to="/Category">Cartegory</Link>
           {' '}
         </li>
       </ul>
