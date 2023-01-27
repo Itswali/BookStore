@@ -21,3 +21,21 @@ body {
   background-color: #fafafa;
   min-height: 100vh;
 }
+
+.p-2 {
+  font-size: 30px;
+  padding: 50px;
+}
+
+.under-construction {
+  cursor: pointer;
+  width: 10%;
+  padding: 12px;
+  border-radius: 3px;
+  background-color: #0290ff;
+  border: none;
+  letter-spacing: 0.5px;
+  color: #fff;
+  font-size: 0.813rem;
+  font-weight: 700;
+}

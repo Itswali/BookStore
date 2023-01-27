@@ -13,7 +13,7 @@ const Categories = () => {
     <div className="p-2">
       <span>{message}</span>
       <br />
-      <button type="button" onClick={handleCheckStatus}>
+      <button className="under-construction" type="button" onClick={handleCheckStatus}>
         Check status
       </button>
     </div>
