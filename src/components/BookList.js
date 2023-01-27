@@ -14,7 +14,7 @@ function BookList() {
 
   return (
     <div className="book-container">
-      <ul>
+      <ul className="books">
         {books && books.length > 0 ? books.map((book) => (
           <Book
             key={book.Id}
@@ -25,6 +25,7 @@ function BookList() {
           />
         )) : <p>No books available</p>}
       </ul>
+      <div className="horizontal-divider"> </div>
       <CreateBook />
     </div>
   );

@@ -33,13 +33,17 @@ function CreateBook() {
   };
 
   return (
-    <form className="add-book" onSubmit={handleSubmit}>
-      <span className="title" htmlFor="title">Title:</span>
-      <input type="text" id="title" name="title" required value={state.title} onChange={onChangeHandler} />
-      <span htmlFor="author">Author:</span>
-      <input type="text" id="author" name="author" required value={state.author} onChange={onChangeHandler} />
-      <button type="submit">Add Book</button>
-    </form>
+    <div className="Add-book-container">
+      <h2 className="add-title">Add Your Book</h2>
+      <section>
+
+        <form className="add-book" onSubmit={handleSubmit}>
+          <input type="text" className="title-input" id="title" placeholder="Add Book Title" name="title" required value={state.title} onChange={onChangeHandler} />
+          <input type="text" id="author" className="author-input" name="author" placeholder="Add Book Author" required value={state.author} onChange={onChangeHandler} />
+          <button className="book-add-button" type="submit">Add Book</button>
+        </form>
+      </section>
+    </div>
   );
 }
 
