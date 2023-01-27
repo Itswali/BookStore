@@ -4,11 +4,11 @@
   flex-direction: column;
   gap: 20px;
   border: 2px solid rgb(255, 255, 255);
-  box-shadow: 3px 3px 3px 0px #000;
+  box-shadow: 3px 3px 3px 0 #000;
 }
 
 .display-container {
-  box-shadow: 5px 5px 5px 0px rgb(102, 92, 243);
+  box-shadow: 5px 5px 5px 0 rgb(102, 92, 243);
   background-color: #fff;
   border-radius: 4px;
   margin: 10px;
@@ -67,7 +67,6 @@
           margin: 0 1rem;
         }
       }
-
     }
 
     .progress-container {
@@ -92,11 +91,9 @@
           -webkit-transform: rotate(45deg);
           transform: rotate(30deg);
         }
-
       }
 
       .progress-stat {
-
         .percent-complete {
           color: #121212;
           font-size: 2rem;
@@ -147,11 +144,7 @@
           letter-spacing: 0.5px;
           color: #fff;
         }
-
       }
-
     }
-
   }
-
 }
