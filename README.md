@@ -48,7 +48,7 @@
 
 > Add a link to your deployed project.
 
-<!-- - [Live Demo Link](https://yourdeployedapplicationlink.com) -->
+ - [Live Demo Link](https://book-store-qe1o.onrender.com/) 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -149,8 +149,8 @@ You can deploy this project using [Github Pages](https://docs.github.com/en/page
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **Addition of a home page**
-- [ ] **Addition of a Collection**
+- [ ] **Comment's for each book**
+- [ ] **Feature for editing a book **
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
