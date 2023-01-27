@@ -1,9 +1,11 @@
 @import url(./_book.scss);
+@import url(./_nav.scss);
 
 * {
   padding: 0;
   margin: 0;
   list-style: none;
+  background-color: #F5F6FA;
 
   h1 {
     font-size: 26px;
@@ -38,18 +40,3 @@
   padding: 20px;
 }
 
-.navbar {
-  border: 2px solid brown;
-  display: flex;
-  margin: 25px;
-  flex-direction: row;
-  height: 30px;
-  justify-content: space-between;
-  padding: 10px;
-}
-
-.nav-links {
-  font-size: 30px;
-  display: flex;
-  gap: 30px;
-}
