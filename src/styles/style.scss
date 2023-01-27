@@ -1,55 +1,42 @@
 @import url(./_book.scss);
+@import url(./_nav.scss);
+@import url(./_addbook.scss);
 
 * {
   padding: 0;
   margin: 0;
   list-style: none;
-
-  h1 {
-    font-size: 26px;
-  }
-}
-
-:any-link {
   text-decoration: none;
 }
 
-.book-display {
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-
-  button {
-    height: 30px;
-    width: 80px;
-    border-radius: 10px;
-  }
+body {
+  padding: 4%;
+  background-color: #f5f6fa;
 }
 
-.add-book {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-
-  .title {
-    padding-left: 30px;
-  }
-
-  padding: 20px;
+#root {
+  margin: 0;
+  padding: 0 0 8%;
+  border-radius: 4px;
+  box-shadow: 0 0 60px 0 rgb(0 0 0 / 5%);
+  background-color: #fafafa;
+  min-height: 100vh;
 }
 
-.navbar {
-  border: 2px solid brown;
-  display: flex;
-  margin: 25px;
-  flex-direction: row;
-  height: 30px;
-  justify-content: space-between;
-  padding: 10px;
-}
-
-.nav-links {
+.p-2 {
   font-size: 30px;
-  display: flex;
-  gap: 30px;
+  padding: 50px;
+}
+
+.under-construction {
+  cursor: pointer;
+  width: 10%;
+  padding: 12px;
+  border-radius: 3px;
+  background-color: #0290ff;
+  border: none;
+  letter-spacing: 0.5px;
+  color: #fff;
+  font-size: 0.813rem;
+  font-weight: 700;
 }
