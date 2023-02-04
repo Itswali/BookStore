@@ -24,11 +24,11 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 <a name="about-project"></a>
+# 📖 BOOK STORE <a name="about-project"></a>
 
 > This is a react app that show your books progress with author name and title.
 
-**Space traveler's** 
+**BOOK STORE** 
 
 
 <!-- Features -->
@@ -37,8 +37,8 @@
 
 > Describe between 1-3 key features of the application.
 
-- **[key_feature_1] - You can reserve rocket or missions**
-- **[key_feature_2] - You can check or cancel reservation on my profile page**
+- **[key_feature_1] - You can add your favourite book**
+- **[key_feature_2] - You can check progress**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -48,7 +48,7 @@
 
 > Add a link to your deployed project.
 
- - [Live Demo Link]() 
+<!-- - [Live Demo Link](https://yourdeployedapplicationlink.com) -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -149,8 +149,8 @@ You can deploy this project using [Github Pages](https://docs.github.com/en/page
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **add new missiles**
-- [ ] **Feature checking all the reserved rockets and missions **
+- [ ] **Addition of a home page**
+- [ ] **Addition of a Collection**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
